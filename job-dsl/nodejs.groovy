@@ -1,6 +1,6 @@
 job('NodeJS example') {
     scm {
-        git('https://github.com/deepanshululla/jenkinsAutomation') {  node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/wardviaene/docker-demo') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('user name')
             node / gitConfigEmail('Your password')
         }
@@ -13,7 +13,7 @@ job('NodeJS example') {
                          // Manage Jenkins -> Configure Tools -> NodeJS Installations -> Name
     }
     steps {
-        shell("cd /var/jenkins_home/workspace/NodeJS example && npm install")
+        shell("npm install")
     }
 }
 
