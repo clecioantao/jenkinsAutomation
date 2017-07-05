@@ -1,0 +1,35 @@
+---
+
+- name: Add jenkins key to apt repo
+  #become_user: root
+  apt_key: url=http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key state=present
+
+- name: Add jenkins to trusted sources
+  #sudo: yes
+  apt_repository: repo='deb http://pkg.jenkins-ci.org/debian binary/' update_cache=yes state=present
+
+- name: Install jenkins
+  #become_user: root
+  apt: name=jenkins state=installed update_cache=yes
+
+- name: start jenkins
+  service: name=jenkins state=started
+
+- name: install nginx server
+  apt: name=nginx state=installed update_cache=yes
+
+#- name: install openssl
+#  apt: name=openssl state=installed update_cache=yes
+
+#- name: generate ssl keys
+  #sudo: yes
+  #become_user: root
+#  shell: openssl req -x509 -nodes -days 365 -newkey rsa:2048 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=www.example.com" \
+#    -keyout /etc/nginx/cert.key -out /etc/nginx/cert.crt
+
+#- name: writing conf files
+#  template: src=nginx_jenkins.conf.j2 dest=/etc/nginx/nginx.conf
+#  notify: 
+#     - restart jenkins
+#     - restart nginx
+

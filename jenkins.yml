@@ -1,0 +1,14 @@
+---
+
+# Ansible file to install jenkins. Copy over roles and this file; along with your own inventory,cfg files for jenkins installation
+
+- hosts: jenkins
+  #become_user: root
+  #remote_user: root
+  sudo: yes
+  gather_facts: yes
+
+  roles:
+     - jenkins  
+
+
