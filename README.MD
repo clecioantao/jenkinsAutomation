@@ -2,13 +2,13 @@
 
 # All things Jenkins
 
-## Owner Deepanshu Lulla
+## Owner: Deepanshu Lulla
 
 This file contains all jenkisn related work I have done in one place. The repo is merely a collection and not in a project by itself
 
 although it could be used as one with discretion.
 
-Things it contains
+## Things it contains
 
 -- Ansible files for Jenkins installtion
 
@@ -19,7 +19,7 @@ Things it contains
 -- Jenkins job dsl written in groovy to create freestyle projects in Jenkins. Plan to add job dsl for creating pipelines as well.
 
 
-List of  Jenkins files for configuring the pipelines
+## List of  Jenkins files for configuring the pipelines
  
 --- for creating a NODEjs multistage Jenkins pipeline with stages such as envrionement setup, tests and finally push to docker hub
 
