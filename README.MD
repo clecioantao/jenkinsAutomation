@@ -33,6 +33,7 @@ although it could be used as one with discretion.
 
 --- Testing Artifactory integration with jenkins for java-spring app with gradle but here gradle is installed locally. The final artifact i.e war file will be pushed to jfrog artifactory.
 
+--- Testing Artifactory integration with jenkins for java-spring app with gradle but here gradle is installed locally. The final artifact i.e war file will be pushed to jfrog artifactory.
 
 
 

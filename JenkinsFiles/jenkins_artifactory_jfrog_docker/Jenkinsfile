@@ -6,6 +6,7 @@ node {
     checkout scm
   }
   stage('build') {
+     git url: 'https://github.com/deepanshululla/gs-gradle.git'	
      myGradleContainer.inside("-v ${env.HOME}/.gradle:/home/gradle/.gradle") {
        sh 'cd complete && ./gradlew build'
      }
