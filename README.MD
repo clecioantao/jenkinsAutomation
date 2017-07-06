@@ -1,6 +1,8 @@
 
 
-#All things Jenkins
+## All things Jenkins
+
+# Owner Deepanshu Lulla
 
 This file contains all jenkisn related work I have done in one place. The repo is merely a collection and not in a project by itself
 
@@ -29,9 +31,7 @@ List of  Jenkins files for configuring the pipelines
 
 --- Testing github integration using Gradle and Java Spring on Docker. Gradle is running on docker container and tests are run within container.
 
---- Testing Artifactory integration with jenkins for java-spring app with gradle but here gradle is installed locally. The final artifact i.e war
-
-file will be pushed to jfrog artifactory.
+--- Testing Artifactory integration with jenkins for java-spring app with gradle but here gradle is installed locally. The final artifact i.e war file will be pushed to jfrog artifactory.
 
 
 
